@@ -1,9 +1,15 @@
-
+import HeroSection from "@/components/heroSection";
+import PopularVacancies from "@/components/popularVacancies";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Home</h1>
+    <main className="">
+      <section className="bg-[#f1f2f4] min-h-[calc(100vh-138px)] flex items-center">
+        <HeroSection />
+      </section>
+      <section>
+        <PopularVacancies />
+      </section>
     </main>
   );
 }

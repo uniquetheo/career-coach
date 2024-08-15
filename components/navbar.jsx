@@ -38,7 +38,7 @@ const NavBar = () => {
         <div className="bg-white">
           <div className="h-[90px] max-w-[1440px] flex justify-between items-center mx-auto">
             <div className="flex gap-8">
-              <div className="h-full flex items-center gap-4 text-purple-800">
+              <div className="h-full flex items-center gap-4 text-[#0A65CC]">
                 <FaBriefcase className="w-8 h-8 " />
                 <span className="text-xl font-bold">Career Coach</span>
               </div>
