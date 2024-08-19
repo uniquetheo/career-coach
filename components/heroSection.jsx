@@ -18,8 +18,9 @@ const HeroSection = () => {
     <div className="max-w-[1440px] mx-auto space-y-8">
       <div className="grid grid-cols-2  gap-8 justify-between">
         <div className="cta flex flex-col gap-8 justify-center">
-          <div className="text-bold text-3xl">
-            <h1>Find a job that suits your interest & skills.</h1>
+          <div className="text-bold text-7xl tracking-tight font-semibold">
+            <h1>Find a job that suits</h1>
+            <h1>your interest & skills.</h1>
           </div>
           <div className="text-bold text-sm">
             <p>
@@ -62,10 +63,13 @@ const HeroSection = () => {
         </div>
         <div className="w-full flex justify-end">
           <Image
-            src="/hero.svg"
+            // src="/hero.svg"
+            src="/office-women.jpg"
             width={500}
             height={500}
-            alt="Picture of the author"
+            alt="hero image"
+            unoptimized
+            className="w-full max-h-[calc(100vh-338px)] object-cover"
           />
         </div>
       </div>
