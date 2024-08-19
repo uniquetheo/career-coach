@@ -9,10 +9,19 @@ import {
   SelectContent,
   SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "./ui/select";
+import { fi } from "flag-icons";
+
+const languages = [
+  { name: "English", value: "english", flag: "/next.svg", code: "us" },
+  { name: "Italian", value: "italian", flag: "/next.svg", code: "it" },
+  { name: "French", value: "french", flag: "/next.svg", code: "fr" },
+  { name: "Spanish", value: "spanish", flag: "/next.svg", code: "es" },
+  { name: "German", value: "german", flag: "/next.svg", code: "de" },
+  { name: "Portuguese", value: "portuguese", flag: "/next.svg", code: "pt" },
+];
 
 const NavBar = () => {
   return (
@@ -23,32 +32,48 @@ const NavBar = () => {
             <div className="h-full">
               <NavMenu />
             </div>
-            <div className="flex">
+            <div className="flex gap-6 h-full items-center">
               <div className="h-full flex items-center gap-2">
                 <FiPhoneCall />
                 <span>+233-546-845-585</span>
               </div>
               <div className="flex">
-                <Image src="/usa.svg" alt="usa flag" width={24} height={24} />
-                <span>English</span>
+                <Select className="">
+                  <SelectTrigger className="min-w-[160px] flex border-none">
+                    <SelectValue placeholder={`${languages[0].name}`} />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectGroup className="">
+                      {languages.map((item, id) => {
+                        return (
+                          <SelectItem
+                            key={id}
+                            value={item.value}
+                            className="flex"
+                          >
+                            <span className={`fi fi-${item.code} mr-2`}></span>
+                            {item.name}
+                          </SelectItem>
+                        );
+                      })}
+                    </SelectGroup>
+                  </SelectContent>
+                </Select>
               </div>
             </div>
           </div>
         </div>
         <div className="bg-white">
           <div className="h-[90px] max-w-[1440px] flex justify-between items-center mx-auto">
-            <div className="flex gap-8">
+            <div className="flex gap-8 items-center">
               <div className="h-full flex items-center gap-4 text-[#0A65CC]">
-                <FaBriefcase className="w-8 h-8 " />
+                <FaBriefcase className="w-8 h-8" />
                 <span className="text-xl font-bold">Career Coach</span>
               </div>
               <div className="h-full">
-                <div className="flex">
-                <div className="w-10 h-10 flex items-center mx-3">
-                    <FaSearch className="" />
-                  </div>
+                <div className="flex justify-between border-2 rounded-md">
                   <Select className="min-w-[250px]">
-                    <SelectTrigger>
+                    <SelectTrigger className="border-none">
                       <SelectValue placeholder="Select a location" />
                     </SelectTrigger>
                     <SelectContent>
@@ -60,12 +85,15 @@ const NavBar = () => {
                       </SelectGroup>
                     </SelectContent>
                   </Select>
-                  
+                  <div className="h-7 my-auto mx-4 border-l-2 "></div>
+                  <div className="w-10 h-10 flex items-center">
+                    <FaSearch className="" />
+                  </div>
                   <Input
                     id="search"
                     type="text"
                     placeholder="Job title, keyword, company"
-                    className="min-w-[400px]"
+                    className="min-w-[400px] border-none"
                   />
                 </div>
               </div>

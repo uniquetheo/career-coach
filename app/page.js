@@ -1,4 +1,5 @@
 import HeroSection from "@/components/heroSection";
+import HowItWorks from "@/components/howItWorks";
 import PopularVacancies from "@/components/popularVacancies";
 
 export default function Home() {
@@ -9,6 +10,9 @@ export default function Home() {
       </section>
       <section>
         <PopularVacancies />
+      </section>
+      <section className="bg-[#f1f2f4]">
+        <HowItWorks />
       </section>
     </main>
   );
