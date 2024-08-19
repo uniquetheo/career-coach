@@ -43,17 +43,17 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <div className="max-w-[1440px] mx-auto py-12">
+    <div className="max-w-[1440px] mx-auto py-12 px-12">
       <div className="">
-        <div className="text-3xl text-center w-full mb-12 font-semibold leading-none tracking-tight ">
+        <div className="text-3xl text-center w-full mb-12 font-semibold  tracking-tight ">
           <h2>How it Works</h2>
         </div>
-        <div className="grid grid-cols-3 w-full justify-between gap-4 text-center my-6">
+        <div className="grid lg:grid-cols-3 grid-cols-2 w-full justify-between gap-4 text-center my-6">
           {steps.map((step, id) => {
             return (
               <div
                 key={id}
-                className={`flex flex-col items-center gap-4 p-6 mb-8 rounded-md w-[450px] ${
+                className={`flex flex-col items-center gap-4 p-6 mb-8 rounded-md xl:w-[430px] w-[300px] ${
                   id % 2 ? "bg-white shadow" : ""
                 }`}
               >

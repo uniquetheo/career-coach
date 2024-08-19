@@ -48,7 +48,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#18191C] text-slate-400 w-full">
       <div className="w-full border-b">
-        <div className="max-w-[1440px] flex justify-between items-center mx-auto min-h-[260px]">
+        <div className="max-w-[1440px] flex justify-between items-center mx-auto min-h-[260px] px-12">
           <div className="flex flex-col gap-4">
             <div className="h-full flex items-center gap-4">
               <FaBriefcase className="w-8 h-8 " />
@@ -69,7 +69,7 @@ const Footer = () => {
           })}
         </div>
       </div>
-      <div className="max-w-[1440px] flex justify-between items-center mx-auto h-[68px]">
+      <div className="max-w-[1440px] flex justify-between items-center mx-auto h-[68px] sm:px-12">
         <div className="">
           <span>@ 2024 Career Coach - Job Portal. All rights Reserved</span>
         </div>

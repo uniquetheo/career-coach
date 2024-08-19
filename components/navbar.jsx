@@ -28,7 +28,7 @@ const NavBar = () => {
     <nav className="w-full h-[138px] sticky top-0 z-10">
       <div className="border flex flex-col">
         <div className="bg-[#F1F2F4]">
-          <div className="h-12 max-w-[1440px] flex justify-between items-center mx-auto">
+          <div className="h-12 max-w-[1440px] flex justify-between items-center mx-auto px-12">
             <div className="h-full">
               <NavMenu />
             </div>
@@ -64,7 +64,7 @@ const NavBar = () => {
           </div>
         </div>
         <div className="bg-white">
-          <div className="h-[90px] max-w-[1440px] flex justify-between items-center mx-auto">
+          <div className="h-[90px] max-w-[1440px] flex justify-between items-center mx-auto px-12">
             <div className="flex gap-8 items-center">
               <div className="h-full flex items-center gap-4 text-[#0A65CC]">
                 <FaBriefcase className="w-8 h-8" />
