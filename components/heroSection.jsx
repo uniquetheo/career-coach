@@ -18,7 +18,7 @@ const HeroSection = () => {
     <div className="max-w-[1440px] mx-auto space-y-8 px-12">
       <div className="grid grid-cols-2  gap-8 justify-between">
         <div className="cta flex flex-col gap-8 justify-center">
-          <div className="text-bold text-7xl tracking-tight font-semibold">
+          <div className="text-bold text-6xl tracking-tight font-semibold">
             <h1>Find a job that suits</h1>
             <h1>your interest & skills.</h1>
           </div>

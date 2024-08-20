@@ -1,12 +1,4 @@
 import { FaBriefcase, FaBuilding, FaFile, FaUsers } from "react-icons/fa";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
-import { FaTowerBroadcast, FaTowerCell } from "react-icons/fa6";
 
 const statsCards = [
   {
