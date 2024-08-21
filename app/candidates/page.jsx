@@ -2,7 +2,7 @@ import React from 'react'
 
 const Candidates = () => {
   return (
-    <div>Candidates</div>
+    <main className="min-h-[calc(100vh-138px)]">Candidates</main>
   )
 }
 

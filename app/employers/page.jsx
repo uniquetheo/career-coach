@@ -2,7 +2,7 @@ import React from 'react'
 
 const Employers = () => {
   return (
-    <div>Employers</div>
+    <main className="min-h-[calc(100vh-138px)]">Employers</main>
   )
 }
 
