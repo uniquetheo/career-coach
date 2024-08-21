@@ -1,3 +1,4 @@
+import CtaSection from "@/components/ctaSection";
 import HeroSection from "@/components/heroSection";
 import HowItWorks from "@/components/howItWorks";
 import PopularCategories from "@/components/popularCategories";
@@ -21,6 +22,9 @@ export default function Home() {
       </section>
       <section className="bg-[#f1f2f4]">
         <Testimonial />
+      </section>
+      <section>
+        <CtaSection />
       </section>
     </main>
   );
