@@ -1,30 +1,69 @@
 import React from "react";
 import { Button } from "./ui/button";
-import { FaRightLong } from "react-icons/fa6";
+import {
+  FaBullhorn,
+  FaCalculator,
+  FaCode,
+  FaDatabase,
+  FaMusic,
+  FaPaintbrush,
+  FaRightLong,
+  FaStethoscope,
+  FaVideo,
+} from "react-icons/fa6";
+import { FaCogs, FaShoppingCart } from "react-icons/fa";
 
 const categories = [
   {
     name: "Graphics & Design",
     number: "25387",
-    icon: <FaRightLong className="w-full h-full p-4" />,
+    icon: <FaPaintbrush className="w-full h-full p-4" />,
   },
   {
     name: "Web Design & Development",
     number: "25387",
-    icon: <FaRightLong className="w-full h-full p-4" />,
+    icon: <FaCode className="w-full h-full p-4" />,
   },
   {
     name: "Digital Marketing",
     number: "25387",
-    icon: <FaRightLong className="w-full h-full p-4" />,
+    icon: <FaBullhorn className="w-full h-full p-4" />,
   },
-  { name: "Video & Animation", number: "25387", icon: <FaRightLong /> },
-  { name: "Music & Audio Production", number: "25387", icon: <FaRightLong /> },
-  { name: "Account & Finance", number: "25387", icon: <FaRightLong /> },
-  { name: "Health and Care", number: "25387", icon: <FaRightLong /> },
-  { name: "Data Science", number: "25387", icon: <FaRightLong /> },
-  { name: "Engineering", number: "25387", icon: <FaRightLong /> },
-  { name: "Procurement", number: "25387", icon: <FaRightLong /> },
+  {
+    name: "Video & Animation",
+    number: "25387",
+    icon: <FaVideo className="w-full h-full p-4" />,
+  },
+  {
+    name: "Music & Audio Production",
+    number: "25387",
+    icon: <FaMusic className="w-full h-full p-4" />,
+  },
+  {
+    name: "Account & Finance",
+    number: "25387",
+    icon: <FaCalculator className="w-full h-full p-4" />,
+  },
+  {
+    name: "Health and Care",
+    number: "25387",
+    icon: <FaStethoscope className="w-full h-full p-4" />,
+  },
+  {
+    name: "Data Science",
+    number: "25387",
+    icon: <FaDatabase className="w-full h-full p-4" />,
+  },
+  {
+    name: "Engineering",
+    number: "25387",
+    icon: <FaCogs className="w-full h-full p-4" />,
+  },
+  {
+    name: "Procurement",
+    number: "25387",
+    icon: <FaShoppingCart className="w-full h-full p-4" />,
+  },
 ];
 
 const PopularCategories = () => {
