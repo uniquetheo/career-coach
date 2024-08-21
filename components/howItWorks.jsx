@@ -2,7 +2,7 @@ import React from "react";
 import { AiOutlineRobot, AiOutlineUserAdd } from "react-icons/ai";
 import { HiOutlineClipboardCheck } from "react-icons/hi";
 import { MdQuestionAnswer } from "react-icons/md";
-import { FaStar } from "react-icons/fa";
+import { FaStar, FaMedal } from "react-icons/fa";
 
 const steps = [
   {
@@ -37,7 +37,7 @@ const steps = [
     title: "Get Trained for Promotions",
     description:
       "Get training from professional in your field to on career growth paths",
-    icon: <FaStar />,
+    icon: <FaMedal />,
   },
 ];
 
@@ -53,7 +53,7 @@ const HowItWorks = () => {
             return (
               <div
                 key={id}
-                className={`flex flex-col items-center gap-4 p-6 mb-8 rounded-md xl:w-[430px] w-[300px] ${
+                className={`flex flex-col items-center gap-4 p-6 mb-8 rounded-md xl:w-[430px] w-[300px] relative ${
                   id % 2 ? "bg-white shadow" : ""
                 }`}
               >
@@ -62,6 +62,9 @@ const HowItWorks = () => {
                   {step.title}
                 </div>
                 <div>{step.description}</div>
+                <div className="w-[60px] h-[60px] hidden absolute top-4 right-4 bg-blue-600/10 z-20 rounded-full shadow">
+                  <span className="w-full h-full flex items-center justify-center text-2xl font-bold tracking-tight">{id + 1}</span>
+                </div>
               </div>
             );
           })}
