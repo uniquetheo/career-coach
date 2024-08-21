@@ -56,7 +56,7 @@ const JobSection = () => {
                       </span>
                     </div>
                     <div className="">
-                      <span>{`Salary ${job.salaryRange[0]} - ${job.salaryRange[1]}`}</span>
+                      <span>{`Salary $${job.salaryRange[0]} - $${job.salaryRange[1]}`}</span>
                     </div>
                   </div>
                   <div className="flex w-full h-full items-center gap-4 pb-6 pt-3">
