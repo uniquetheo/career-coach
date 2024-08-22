@@ -1,45 +1,7 @@
 import React from "react";
-import { AiOutlineRobot, AiOutlineUserAdd } from "react-icons/ai";
-import { HiOutlineClipboardCheck } from "react-icons/hi";
-import { MdQuestionAnswer } from "react-icons/md";
-import { FaStar, FaMedal } from "react-icons/fa";
 
-const steps = [
-  {
-    title: "Create Account",
-    description: "Setup an account with Career Coach",
-    icon: <AiOutlineUserAdd />,
-  },
-  {
-    title: "Choose a Job/Role",
-    description: "Choose a job role that you qualify the most for",
-    icon: <HiOutlineClipboardCheck />,
-  },
-  {
-    title: "AI Generated CV and Cover Letter",
-    description:
-      "A cover letter and CV is genrated from the job of choice and your skills",
-    icon: <AiOutlineRobot />,
-  },
-  {
-    title: "Mock Interview and Analyses",
-    description:
-      "Undertake a mock interview to groom you for the Job Interview",
-    icon: <MdQuestionAnswer />,
-  },
-  {
-    title: "Get Dream Job",
-    description:
-      "Share helpful resources on new role and coach you through your career",
-    icon: <FaStar />,
-  },
-  {
-    title: "Get Trained for Promotions",
-    description:
-      "Get training from professional in your field to on career growth paths",
-    icon: <FaMedal />,
-  },
-];
+import { steps } from "@/data/dummy";
+
 
 const HowItWorks = () => {
   return (
@@ -63,7 +25,9 @@ const HowItWorks = () => {
                 </div>
                 <div>{step.description}</div>
                 <div className="w-[60px] h-[60px] hidden absolute top-4 right-4 bg-blue-600/10 z-20 rounded-full shadow">
-                  <span className="w-full h-full flex items-center justify-center text-2xl font-bold tracking-tight">{id + 1}</span>
+                  <span className="w-full h-full flex items-center justify-center text-2xl font-bold tracking-tight">
+                    {id + 1}
+                  </span>
                 </div>
               </div>
             );

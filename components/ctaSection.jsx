@@ -1,23 +1,8 @@
 import { FaArrowRight } from "react-icons/fa6";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import { cta } from "@/data/dummy";
 
-const cta = [
-  {
-    title: "Become a Candidate",
-    description:
-      "Land your perfect job with ease and style. Register now for a seamless job search experience tailored just for you!",
-    action: "Register Now",
-    bgImg: "/mantyping.jpg",
-  },
-  {
-    title: "Become an Employer",
-    description:
-      "Find your ideal candidate effortlessly. Register now and secure the perfect match for your open position!",
-    action: "Get started Now",
-    bgImg: "/womantyping.jpg",
-  },
-];
 
 const CtaSection = () => {
   return (

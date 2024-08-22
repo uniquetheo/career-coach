@@ -2,15 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { menuItems } from "@/data/dummy";
 
-const menuItems = [
-  { name: "Home", slug: "/" },
-  { name: "Find Jobs", slug: "/find-jobs" },
-  { name: "Employers", slug: "/employers" },
-  { name: "Candidates", slug: "/candidates" },
-  { name: "Pricing Plans", slug: "/pricing-plans" },
-  { name: "Customer Supports", slug: "/support" },
-];
 
 const NavMenu = () => {
   const pathname = usePathname()

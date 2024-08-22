@@ -14,14 +14,7 @@ import {
 } from "./ui/select";
 import { fi } from "flag-icons";
 
-const languages = [
-  { name: "English", value: "english", flag: "/next.svg", code: "us" },
-  { name: "Italian", value: "italian", flag: "/next.svg", code: "it" },
-  { name: "French", value: "french", flag: "/next.svg", code: "fr" },
-  { name: "Spanish", value: "spanish", flag: "/next.svg", code: "es" },
-  { name: "German", value: "german", flag: "/next.svg", code: "de" },
-  { name: "Portuguese", value: "portuguese", flag: "/next.svg", code: "pt" },
-];
+import { languages } from "@/data/dummy";
 
 const NavBar = () => {
   return (

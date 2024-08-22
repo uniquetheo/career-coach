@@ -1,18 +1,4 @@
-const popularVacancies = [
-  { name: "Data Scientist", numberOpen: "24356" },
-  { name: "Data Scientist", numberOpen: "24356" },
-  { name: "Data Scientist", numberOpen: "24356" },
-  { name: "Data Scientist", numberOpen: "24356" },
-  { name: "Data Scientist", numberOpen: "24356" },
-  { name: "Data Scientist", numberOpen: "24356" },
-  { name: "Data Scientist", numberOpen: "24356" },
-  { name: "Anaestician", numberOpen: "24336" },
-  { name: "Data Scientist", numberOpen: "24356" },
-  { name: "Data Scientist", numberOpen: "24356" },
-  { name: "Data Scientist", numberOpen: "24356" },
-  { name: "Data Scientist", numberOpen: "24356" },
-  { name: "Designer", numberOpen: "14356" },
-];
+import { popularVacancies } from "@/data/dummy";
 
 const PopularVacancies = () => {
   return (

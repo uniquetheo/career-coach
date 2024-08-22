@@ -1,32 +1,7 @@
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 
-const testimonials = [
-  {
-    stars: "5",
-    description:
-      "Career Assistant made my job search easy and stress free. You feel confident with the post interview training.",
-    clientName: "Bessie Cooper",
-    clientImage: "/bessiecooper.png",
-    clientRole: "UI/UX Designer",
-  },
-  {
-    stars: "5",
-    description:
-      "Career Assistant made my job search easy and stress free. You feel confident with the post interview training.",
-    clientName: "Robert Fox",
-    clientImage: "/robertfox.png",
-    clientRole: "UI/UX Designer",
-  },
-  {
-    stars: "5",
-    description:
-      "Career Assistant made my job search easy and stress free. You feel confident with the post interview training.",
-    clientName: "Jane Cooper",
-    clientImage: "/janecooper.png",
-    clientRole: "UI/UX Designer",
-  },
-];
+import { testimonials } from "@/data/dummy";
 
 const TestimonialCards = () => {
   return (

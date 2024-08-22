@@ -2,16 +2,10 @@ import Image from "next/image";
 import React from "react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
-import { Separator } from "./ui/separator";
 import { FaLocationArrow, FaSearch } from "react-icons/fa";
 import HeroCards from "./heroCards";
+import { suggestions } from "@/data/dummy";
 
-const suggestions = [
-  { name: "Designer" },
-  { name: "Developer" },
-  { name: "Digital Marketing" },
-  { name: "Video Editing" },
-];
 
 const HeroSection = () => {
   return (

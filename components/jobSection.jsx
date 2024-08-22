@@ -1,43 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import { FaRegBookmark } from "react-icons/fa6";
+import { jobs } from "@/data/dummy";
+import { timeOptions } from "@/data/dummy";
 
-const jobs = [
-  {
-    title: "Technical Support Specialist",
-    time: 1,
-    salaryRange: ["20000", "25000"],
-    companyName: "Google",
-    companyLocation: "Accra, Ghana",
-    companyImg: "/logoGoogle.png",
-  },
-  {
-    title: "Technical Support Specialist",
-    time: 3,
-    salaryRange: ["20000", "25000"],
-    companyName: "Google",
-    companyLocation: "Accra, Ghana",
-    companyImg: "/logoGoogle.png",
-  },
-  {
-    title: "Technical Support Specialist",
-    time: 5,
-    salaryRange: ["20000", "25000"],
-    companyName: "Google",
-    companyLocation: "Accra, Ghana",
-    companyImg: "/logoGoogle.png",
-  },
-  {
-    title: "Technical Support Specialist",
-    time: 2,
-    salaryRange: ["20000", "25000"],
-    companyName: "Google",
-    companyLocation: "Accra, Ghana",
-    companyImg: "/logoGoogle.png",
-  },
-];
 
-const timeOptions = ["full-time", "part-time", "hybrid", "nss", "internship"];
 
 const JobSection = () => {
   return (

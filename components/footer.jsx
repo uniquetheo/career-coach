@@ -5,44 +5,8 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { footerLinks } from "@/data/dummy";
 
-const footerLinks = [
-  {
-    heading: "Quick Links",
-    content: [
-      { name: "About", slug: "about" },
-      { name: "Contact", slug: "contact" },
-      { name: "Pricing", slug: "cricing" },
-      { name: "Blog", slug: "blog" },
-    ],
-  },
-  {
-    heading: "Candidate",
-    content: [
-      { name: "Browse Jobs", slug: "browse-jobs" },
-      { name: "Browse Employers", slug: "browse-employers" },
-      { name: "Candidate Dashboard", slug: "candidate-dashboard" },
-      { name: "Saved Jobs", slug: "saved-jobs" },
-    ],
-  },
-  {
-    heading: "Employers",
-    content: [
-      { name: "Post a Job", slug: "Post a Job" },
-      { name: "Browse Candidates", slug: "browse-candidates" },
-      { name: "Employers Dashboard", slug: "employers-dashboard" },
-      { name: "Applications", slug: "applications" },
-    ],
-  },
-  {
-    heading: "Support",
-    content: [
-      { name: "FAQs", slug: "faqs" },
-      { name: "Privacy Policy", slug: "privacy-policy" },
-      { name: "Terms & Conditions", slug: "terms-conditions" },
-    ],
-  },
-];
 
 const Footer = () => {
   return (

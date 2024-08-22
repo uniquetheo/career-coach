@@ -1,27 +1,6 @@
-import { FaBriefcase, FaBuilding, FaFile, FaUsers } from "react-icons/fa";
 
-const statsCards = [
-  {
-    name: "Live Jobs",
-    number: "23459",
-    icon: <FaBriefcase className="w-full h-full p-4" />,
-  },
-  {
-    name: "Companies",
-    number: "23459",
-    icon: <FaBuilding className="w-full h-full p-4" />,
-  },
-  {
-    name: "Candidates",
-    number: "23459",
-    icon: <FaUsers className="w-full h-full p-4" />,
-  },
-  {
-    name: "New Jobs",
-    number: "23459",
-    icon: <FaFile className="w-full h-full p-4" />,
-  },
-];
+
+import { statsCards } from "@/data/dummy";
 
 const HeroCards = () => {
   return (
