@@ -3,17 +3,21 @@ import React from "react";
 import { FaRegBookmark } from "react-icons/fa6";
 import { jobs } from "@/data/dummy";
 import { timeOptions } from "@/data/dummy";
+import Link from "next/link";
 
 
 
 const JobSection = () => {
+  if (!jobs){
+    return <div>Sorry... no jobs found!</div>
+  }
   return (
     <div className="max-w-[1440px] mx-auto py-6 px-12">
       <div className="flex w-full">
         <div className="grid grid-cols-3 w-full gap-6">
           {jobs.slice(0, 14).map((job, idx) => {
             return (
-              <div key={idx} className="flex flex-col border rounded p-6">
+              <Link href={`/${job.idx}`} key={idx} className="flex flex-col border rounded p-6">
                 <div className="relative">
                   <h3 className="text-xl font-semibold">{job.title}</h3>
                   <div className="flex gap-3 items-center">
@@ -47,7 +51,7 @@ const JobSection = () => {
                     <FaRegBookmark />
                   </div>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>
